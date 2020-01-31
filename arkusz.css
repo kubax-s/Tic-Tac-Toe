@@ -1,0 +1,49 @@
+body {
+    background-color: darkslategray;
+    margin: 1;
+}
+
+.title {
+    color: darkslategray;
+    background-color: slategray;
+    text-align: center;
+    font-size: 50px;
+    border: 3px groove black;
+    width: 50%;
+    margin: auto;
+}
+
+.containerGame {
+    width: 606px;
+    height: 606px;
+    margin: 30px auto;
+    border: 2px solid black;
+}
+
+.row {
+    display: flex;
+}
+
+.field {
+    border:1px outset black;
+    background-color: lightslategray;
+    width:200px;
+    height: 200px;
+    font-size: 100px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    line-height: 200px;
+    vertical-align: middle;
+}
+
+.field:hover {
+    background-color: slategray;
+    cursor: pointer;
+    border:1px inset black;
+}
+
+.clicked {
+    background-color: slategray;
+    border: 1px inset black;
+}
