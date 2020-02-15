@@ -11,41 +11,42 @@ const c3 = document.querySelector('#c3')
 const isWin = () => {
     if(a1.innerHTML && a1.innerHTML === a2.innerHTML && a2.innerHTML === a3.innerHTML) {
         alert('Wygrywa' + " " + a1.innerHTML)
-        return true
+        window.location.reload(true);
+        
     }
     if(b1.innerHTML && b1.innerHTML === b2.innerHTML && b2.innerHTML === b3.innerHTML) {
         alert('Wygrywa' + " " + b1.innerHTML)
-        return true
+        window.location.reload(true);
 
     }
     if(c1.innerHTML && c1.innerHTML === c2.innerHTML && c2.innerHTML === c3.innerHTML) {
         alert('Wygrywa' + " " + c1.innerHTML)
-        return true
+        window.location.reload(true);
 
     }
     if(a1.innerHTML && a1.innerHTML === b1.innerHTML && b1.innerHTML === c1.innerHTML) {
         alert('Wygrywa' + " " + a1.innerHTML)
-        return true
+        window.location.reload(true);
 
     }
     if(a2.innerHTML && a2.innerHTML === b2.innerHTML && b2.innerHTML === c2.innerHTML) {
         alert('Wygrywa' + " " + a2.innerHTML)
-        return true
+        window.location.reload(true);
 
     }
     if(a3.innerHTML && a3.innerHTML === b3.innerHTML && b3.innerHTML === c3.innerHTML) {
         alert('Wygrywa' + " " + a3.innerHTML)
-        return true
+        window.location.reload(true);
 
     }
     if(a1.innerHTML && a1.innerHTML === b2.innerHTML && b2.innerHTML === c3.innerHTML) {
         alert('Wygrywa' + " " + a1.innerHTML)
-        return true
+        window.location.reload(true);
 
     }
     if(a3.innerHTML && a3.innerHTML === b2.innerHTML && b2.innerHTML === c1.innerHTML) {
         alert('Wygrywa' + " " + a3.innerHTML)
-        return true
+        window.location.reload(true);
 
     }
     return false
@@ -65,6 +66,7 @@ const clickFieldHandler = (e) => {
     }
     if (!isWin() && counter === 9) {
         alert("REMIS")
+        window.location.reload(true);
     }
 
 }
